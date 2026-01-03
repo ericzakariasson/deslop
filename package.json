@@ -1,0 +1,38 @@
+{
+  "name": "deslop",
+  "version": "0.1.0",
+  "description": "CLI tool for removing AI slop from codebases",
+  "type": "module",
+  "bin": {
+    "deslop": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js"
+  },
+  "keywords": [
+    "cli",
+    "ai",
+    "code-quality",
+    "refactoring"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.0",
+    "@cursor-ai/january": "^0.2.1",
+    "@iarna/toml": "^2.2.5",
+    "commander": "^12.1.0",
+    "ink": "^5.0.1",
+    "ink-select-input": "^6.0.0",
+    "ink-spinner": "^5.0.0",
+    "ink-text-input": "^6.0.0",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.12",
+    "typescript": "^5.7.2"
+  }
+}

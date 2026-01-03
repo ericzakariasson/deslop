@@ -1,0 +1,5 @@
+# deslop configuration
+
+[models]
+planning = "claude-4.5-opus-high"
+executing = "claude-4.5-opus-high"

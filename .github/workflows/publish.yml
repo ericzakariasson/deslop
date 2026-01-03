@@ -22,6 +22,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Check version exists
+        run: npm run check-version
+
       - name: Build project
         run: npm run build
 

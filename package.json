@@ -15,7 +15,9 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "start": "node dist/cli.js"
+    "start": "node dist/cli.js",
+    "prepublishOnly": "node scripts/prepublish-check.js",
+    "check-version": "node scripts/check-version.js"
   },
   "keywords": [
     "cli",

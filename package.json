@@ -1,6 +1,6 @@
 {
   "name": "deslop",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CLI tool for removing AI slop from codebases",
   "type": "module",
   "bin": {

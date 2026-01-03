@@ -119,7 +119,7 @@ const program = new Command();
 program
   .name('deslop')
   .description('Remove AI slop from your codebase')
-  .version('0.1.0');
+  .version('0.1.1');
 
 program
   .command('init')

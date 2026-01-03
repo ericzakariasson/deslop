@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 import { readFileSync } from 'fs';
-import { existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 
@@ -14,13 +13,6 @@ const packageJsonPath = join(rootDir, 'package.json');
 const packageJson = JSON.parse(readFileSync(packageJsonPath, 'utf-8'));
 const version = packageJson.version;
 const packageName = packageJson.name;
-
-// Check if dist/cli.js exists
-const distCliPath = join(rootDir, 'dist', 'cli.js');
-if (!existsSync(distCliPath)) {
-  console.error(`❌ Error: dist/cli.js does not exist. Run 'npm run build' first.`);
-  process.exit(1);
-}
 
 // Query npm registry to check if version already exists
 const registryUrl = `https://registry.npmjs.org/${packageName}`;
